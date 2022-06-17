@@ -13,14 +13,18 @@ import org.junit.runner.RunWith;
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
 
         },
-        //providing the location of our features package
+        //providing the location of our FEATURE package
         features = "src/test/resources/features",   // “features” --> Copy Path/Reference --> Path From Content Root
 
-        //giving the address where we store our step_definition
+        //giving the address where we store our STEP_DEFINITION
         glue = "com/cydeo/step_definitions",        // "step_definitions" --> Copy Path/Reference --> Path From Source Root
-        dryRun = false,         // true --> I want to get snippets
-        tags = "",
-        publish = false
+
+        //true --> "I don't want to run my java selenium code. What I want is; if I have extra snippets, I just want to get them"
+        //true --> I want to get snippets
+        dryRun = false,         // false --> I want to run my java selenium code.
+
+        tags = ""
+//        publish = false
 
 )
 public class CukesRunner {
