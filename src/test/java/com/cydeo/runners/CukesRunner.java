@@ -23,7 +23,7 @@ import org.junit.runner.RunWith;
         //true --> I want to get snippets
         dryRun = false,         // false --> I want to run my java selenium code.
 
-        tags = "@Regression"
+        tags = "@wip"
 //        publish = false
 
 )
