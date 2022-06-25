@@ -23,8 +23,8 @@ import org.junit.runner.RunWith;
         //true --> I want to get snippets
         dryRun = false,         // false --> I want to run my java selenium code.
 
-        tags = "@scenarioOutline"
-//        publish = false
+        tags = "@wip",
+        publish = true
 
 )
 public class CukesRunner {
