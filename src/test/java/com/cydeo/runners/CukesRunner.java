@@ -9,11 +9,11 @@ import org.junit.runner.RunWith;
         plugin = {
                 //"pretty",
                 "html:target/cucumber-report.html",
-                "rerun:target/rerun.txt",
+                "rerun:target/rerun.txt",               //keeping track of failed scenarios
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
 
         },
-        //providing the location of our FEATURE package
+        //providing the location of our FEATURES package
         features = "src/test/resources/features",   // “features” --> Copy Path/Reference --> Path From Content Root
 
         //giving the address where we store our STEP_DEFINITION
@@ -23,7 +23,7 @@ import org.junit.runner.RunWith;
         //true --> I want to get snippets
         dryRun = false,         // false --> I want to run my java selenium code.
 
-        tags = "@wip",
+        tags = "",
         publish = true
 
 )
