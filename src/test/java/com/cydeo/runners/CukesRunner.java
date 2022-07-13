@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {
-                //"pretty",
+                //"pretty",     // prints out additional information in the console
                 "html:target/cucumber-report.html",
                 "rerun:target/rerun.txt",               //keeping track of failed scenarios
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
@@ -24,7 +24,7 @@ import org.junit.runner.RunWith;
         dryRun = false,         // false --> I want to run my java selenium code.
 
         tags = "",
-        publish = true
+        publish = true          // true / false
 
 )
 public class CukesRunner {
